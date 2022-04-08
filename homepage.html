@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Hot News</h1>
+		<nav>
+			<!-- create a navigation-->
+			<h2>Home Page</h2>
+			<!-- <img src="icon1.jpg" alt="GDPT icon" id="gdpt"> -->
+			<!-- for searching content -->
+			<!-- <input type="search" id="search" class="ui-autocomple" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="on" style="float: right;"> -->
+			<a href="about.html">About</a> &nbsp;
+			<a href="homepage.html" class="active">Home Page</a> &nbsp;
+
+		</nav>	
+	</header>
+	
+	<main>
+
+		<h3 id="event">Events and News Beside Us</h3>
+		<h2>Charlotte News</h2>
+		<div id="default_news"></div>
+		<div id="container" style="margin-left: 20px;">	
+			<form>
+				<div class="input-field">
+					<label for="searchquery">Find what happen in the World...</label>
+					<input type="text" id="searchquery"/>
+				
+					<input type="submit" id="searchbtn" value="search">
+					
+				</div>
+			</form>
+			<div id="loader">Loading...</div> 
+			<div id="news"></div>
+			
+		 
+	</div>	 		
+		
+	</main>
+	<footer>
+			
+ 			<div class="contact">
+ 				<p id="contact">Contact me:</p>
+ 				<ul>
+ 					<li><a href="mailto:qho2@uncc.edu">Email to: qho2@uncc.edu</a></li>
+ 					<li><a href="https://www.google.com/maps/place/2006+Pleasant+Dale+Dr,+Charlotte,+NC+28214/@35.2642728,-80.9757618,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a2da543623e5:0x5a65623fb04eca12!8m2!3d35.2642728!4d-80.9735731">Address: 2006, Pleasant Dale Dr, Charlotte, NC 28214</a></li>
+ 					<li><a href="tel:7044923892">Call me: (01) 704-492-1335</a></li>
+				</ul>
+			</div>	
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="news_api.js"></script>
+	
+</body>
+</html>

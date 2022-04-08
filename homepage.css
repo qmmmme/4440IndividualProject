@@ -1,0 +1,176 @@
+:root {
+   --header-color: white;
+   --font-color: white;
+   --bg-color: lightblue;
+}
+
+body {
+   color: var(--font-color);
+   font-size: 12px;
+   font-family: Arial, serif;
+   background-image: url('./images/news.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+}
+      
+h1 {
+   color: var(--header-color);
+   text-align: center;
+   font-size: 4rem;
+ }
+      
+header h2 {
+   color: var(--header-color);
+   position: absolute;
+   top: 30px;
+   right: 20px;
+   font-size: 20px;
+}
+
+a:link {
+   color: var(--font-color);  
+}   
+
+a:visited {
+   color: var(--font-color);
+}   
+
+a:hover {
+   color: black;
+   background-color: lightyellow;
+   border: 1px solid white;
+   border-radius: 10px;
+
+}
+a:active {
+   color:  lightyellow;
+}
+
+
+.active {
+   color: black; 
+   background-color: lightcoral;
+   border: 1px solid white;
+   border-radius: 10px;
+}
+#loader, #done {
+   display: none;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   font-size: 30px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+   margin-right:  5px;
+}
+
+nav a {
+   float: right;
+   padding: 0px 10px;
+}
+main h2 {
+   padding: 30px;
+   font-size: 30px;
+}
+.output1 img{
+   width: 150px;
+   height:  100px;
+}
+.output1 a {
+   color: coral;
+   font-size: 18px;
+}
+
+.output a {
+   color: coral;
+   font-size: 12px;
+}
+.output img{
+   width: 300px;
+   height:  200px;
+}
+#default_news {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+#default_news > div{
+   padding: 10px;
+   margin: 5px;
+   background-color: lightyellow;
+   color: black;
+   border: 1px solid blue;
+   border-radius: 5px;
+   width: 300px;
+   height: 400px;
+}
+#news {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: minmax(100px, auto);
+   grid-gap: 5px;
+   margin-top: 10px;
+}
+#news h2{
+   font-size: 40px;
+   text-align: center;
+}
+#news > div {
+   background-color: lightgreen;
+   color: black;
+   padding: 5px;
+   border: 1px solid blue;
+   border-radius: 5px;
+}
+#event {
+   font-size: 3rem;
+   padding: 5px;
+}
+form {
+   display: flex;
+   align-content: center;
+}
+.input-field {
+   display: flex;
+   align-items: center;
+   margin-top: 40px;
+}
+.input-field label{
+   color: var(--font-color);
+   font-size: 40px;
+}
+input[type=submit] {
+   width: 100px;
+   height: 40px;
+   background-color: whitesmoke;
+   color: black;
+   font-size: 20px;
+}
+
+input[type=text] {
+   margin-right: 30px;
+   width: 600px;
+   height: 40px;
+   background-color: whitesmoke;
+   color: black;
+   font-size: 35px;
+}
+
+#contact{
+   text-align: left;
+   font-size: 2rem;
+   font-family: fantasy;
+   color:  #28DC28;
+   text-shadow: 1px 1px darkred;
+}
+
+footer a {
+   font-size: 20px;
+}
+footer a:hover {
+   background-color: lightyellow;
+}
+

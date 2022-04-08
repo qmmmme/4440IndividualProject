@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Quang Ho Profile</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<!-- using lightbox style -->
+	<link href="lightbox.min.css" rel="stylesheet" />
+	<!--for the jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--for the cyle2 plugin-->
+	<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+	
+</head>
+<body>
+	<header>
+		<h1>It's me Quang Ho</h1>
+		<nav>	
+			<!-- create a navigation-->
+			<h2>My Profile</h2>
+			<a href="about.html" class="active">About</a> &nbsp;
+			<a href="homepage.html">Home Page</a> &nbsp;
+		</nav>
+	</header>
+	<main>
+		<div id="container">
+			<div id="self">
+					<h2>
+						Be who you are<br>
+					</h2>
+			</div>	
+			<div id="slideshow-text">
+				
+				<div>
+					<button id="bio-btn">My Biography</button>
+				</div>
+				<div>
+					<button id="hob-btn">My Hobby</button>
+				</div>
+				<div>
+					<button id="edu-btn">My Education</button>
+				</div>
+				
+			</div>
+
+			<div id="panel">
+				<div id="mybio" style="display:none">
+					<p>&nbsp;&nbsp;&nbsp;I was born in Vietnam on Feb 2, 1990 at a remote poor village surronding with mountain and forest, named Phuoc Cat I. My childhood is associated with many beautiful memories, with rivers, mountains, and classrooms built of wood.
+					</p> 
+					<img src="./images/village.jpeg" alt="My hometown">
+				</div>
+				<div id="myhob" style="display:none">
+					<p>&nbsp;&nbsp;&nbsp;I loved reading adventurous books, cooking, and spending time with friends. I and my friends have played from little kid to adulthood, and we have promised to keep that companionship forever.</p>
+					<img src="./images/yenwedding.jpeg" alt="My friend wedding party">
+				</div>
+				<div id="myedu" style="display:none">
+					<p>&nbsp;&nbsp;&nbsp;After two years of studying at a school in my hometown, I asked my parents' permission to enroll in a prestigious school to be able to enter university, Nguyen Khuyen High School. Luckily, I passed the university exams with very high scores, graduated, and matriculated at the University of Mediacation Ho Chi Minh. </p>
+					<img src="./images/yduoc.jpeg" alt="Medical University">
+				</div>
+			</div>	
+			
+			<div class="cycle-slideshow"
+				data-cycle-fx = "fadeout"
+				data-cycle-speed = "2000"
+				data-cycle-timeout = "1000">
+				
+				<img src="./images/bro2016.jpeg" alt="My brother and sister in law" >
+				<img src="./images/cocoisland2012.jpeg" alt="Coco Beach Thai Land">
+				<img src="./images/hcmcafe2016.jpeg" alt="Alone Cafe 2016">
+				<img src="./images/khucmuathu2014.jpeg" alt="At cofee shop Khuc Mua Thu 2014">
+				<img src="./images/myfamily2006.jpeg" alt="My family when I was 14 year-old">
+				<img src="./images/myfiancee2012.jpeg" alt="Secret Fiancee">
+				<img src="./images/mysister.jpeg" alt="My sister">
+				<img src="./images/hcm2009.jpeg" alt="Selffile 2009">
+				
+				
+			</div>
+
+		</div>	
+		<button id="btn_gallery">Click here to explore all my pictures</button>
+		<div id="gallery" style="display: none"> 
+			
+			<a href="./images/bro2016.jpeg" data-lightbox="photos" data-title="My brother and sister in law"><img src="./images/bro2016.jpeg" alt="My brother and sister in law" ></a>
+			<a href="./images/cocoisland2012.jpeg" data-lightbox="photos" data-title="Coco Beach Thai Land"><img src="./images/cocoisland2012.jpeg" alt="Coco Beach Thai Land"></a>
+			<a href="./images/hcmcafe2016.jpeg" data-lightbox="photos" data-title="Alone Cafe 2016"><img src="./images/hcmcafe2016.jpeg" alt="Alone Cafe 2016"></a>
+			<a href="./images/khucmuathu2014.jpeg" data-lightbox="photos" data-title="At cofee shop Khuc Mua Thu 2014"><img src="./images/khucmuathu2014.jpeg" alt="At cofee shop Khuc Mua Thu 2014"></a>
+			<a href="./images/myfamily2006.jpeg" data-lightbox="photos" data-title="My family when I was 14 year-old"><img src="./images/myfamily2006.jpeg" alt="My family when I was 14 year-old"></a>
+			<a href="./images/myfiancee2012.jpeg" data-lightbox="photos" data-title="Secret Fiancee"><img src="./images/myfiancee2012.jpeg" alt="Secret Fiancee"></a>
+			<a href="./images/mysister.jpeg" data-lightbox="photos" data-title="My sister"><img src="./images/mysister.jpeg" alt="My sister"></a>
+			<a href="./images/hcm2009.jpeg" data-lightbox="photos" data-title="Selffile 2009"><img src="./images/hcm2009.jpeg" alt="Selffile 2009"></a>
+			<a href="./images/village.jpeg" data-lightbox="photos" data-title="My hometown"><img src="./images/village.jpeg" alt="My hometown"></a>
+			<a href="./images/yenwedding.jpeg" data-lightbox="photos" data-title="My friend wedding"><img src="./images/yenwedding.jpeg" alt="My friend wedding party"></a>
+			<a href="./images/yduoc.jpeg" data-lightbox="photos" data-title="Medical University"><img src="./images/yduoc.jpeg" alt="Medical University"></a>
+			
+			
+		</div>	
+
+	</main>
+	<footer>
+			<div class="contact">
+ 				<p id="contact">Contact me:</p>
+ 				<ul>
+ 					<li><a href="mailto:qho2@uncc.edu">Email to: qho2@uncc.edu</a></li>
+ 					<li><a href="https://www.google.com/maps/place/2006+Pleasant+Dale+Dr,+Charlotte,+NC+28214/@35.2642728,-80.9757618,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a2da543623e5:0x5a65623fb04eca12!8m2!3d35.2642728!4d-80.9735731">Address: 2006, Pleasant Dale Dr, Charlotte, NC 28214</a></li>
+ 					<li><span>Call me: </span><a href="tel:7044923892">(01) 704-492-1335</a></li>
+				</ul>
+			</div>	
+	</footer>
+	<script src="about.js"></script>
+	<script src="lightbox.min.js"></script>
+</body>
+</html>
